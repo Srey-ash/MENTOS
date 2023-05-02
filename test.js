@@ -6,19 +6,19 @@ function cesdscore(questions) {
       }
   }
   if (total < 17) {
-    document.write("You are fine!! Stay Happy!!")
+    alert("You are fine!! Stay Happy!!")
 }
 if (total >= 17 && total < 28) {
-    document.write('Subthreshold depression symptoms')
+    alert('Subthreshold depression symptoms')
 }
 if (total >= 28 && total < 30) {
-  document.write('Possible major depressive episode')
+  alert('Possible major depressive episode')
 }
 if (total >= 30 && total < 45) {
-  document.write('Probable major depressive episode')
+  alert('Probable major depressive episode')
 }
 if (total >= 45) {
-  document.write('Meets criteria for Major depressive episode')
+  alert('Meets criteria for Major depressive episode')
 }
   return total
 }
