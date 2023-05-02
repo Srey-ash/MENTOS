@@ -1,8 +1,4 @@
-/* -------------------------------- 
 
-Primary style
-
--------------------------------- */
 *, *::after, *::before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -286,7 +282,6 @@ Single slide style
   overflow: hidden;
 }
 .cd-hero-slider .cd-bg-video-wrapper video {
-  /* you won't see this element in the html, but it will be injected using js */
   display: block;
   min-height: 100%;
   min-width: 100%;
