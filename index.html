@@ -1,4 +1,3 @@
-
 <html>
     <head>
         <meta charset="utf-8">
@@ -32,8 +31,8 @@
         <ul class="nav flex-column">
             <li class="nav-item"><a class="nav-link" href="#home"><span>Intro</span></a></li>
             <li class="nav-item"><a class="nav-link" href="#services"><span>Services</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="#stress-relief-products"><span>stress relief products</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="#our-team"><span>Our Team</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#stress relief products"><span>stress relief products</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#our team"><span>Our Team</span></a></li>
             <li class="nav-item"><a class="nav-link" href="#contact-us"><span>Contact Us</span></a></li>
         </ul>
     </div>
@@ -60,7 +59,7 @@
                         <div class="line-dec"></div>
                         <p>ZeN Mind is a website that provides users with a better understanding of their mental health status and identify potential risk factors.<br>
                             We provide you with a questions that help you analyze your mental health condition.
-                        Please share our <a rel="nofollow" href="https://templatemo.com">website</a> to your friends or collegues. Thank you.</p>
+                        Please share our website to your friends or collegues. Thank you.</p>
                         
                         <div class="primary-button">
                             <a href="test.html">CHECK YOUR RESULT</a>
@@ -135,7 +134,7 @@
                         </div>
                         <div class="item">
                             <div class="testimonials-item">
-                                <a href="https://amzn.eu/d/dQKSu9f" data-lightbox="image-1"><img src="stress2.jpg" alt=""></a>
+                                <a href="https://www.amazon.in/dp/B099N7LM76?_encoding=UTF8&psc=1&ref_=cm_sw_r_cp_ud_dp_ZC1ZRBJWM8Y08RVQ6DPD_1" data-lightbox="image-1"><img src="stress2.jpg" alt=""></a>
                                 <div class="text-content">
                                     <h4>Fidget Cube</h4>
                                     <span> ₹687</span>
@@ -144,7 +143,7 @@
                         </div>
                         <div class="item">
                             <div class="testimonials-item">
-                                <a href="https://amzn.eu/d/aWbZnUe" data-lightbox="image-1"><img src="stress3.jpg" alt=""></a>
+                                <a href="https://www.amazon.in/dp/B0B5XLL952?_encoding=UTF8&psc=1&ref_=cm_sw_r_cp_ud_dp_JE2BWHP7EM35RK5YV7EN" data-lightbox="image-1"><img src="stress3.jpg" alt=""></a>
                                 <div class="text-content">
                                     <h4>Punch Me Toy</h4>
                                     <span> ₹749</span>
@@ -153,7 +152,7 @@
                         </div>
                         <div class="item">
                             <div class="testimonials-item">
-                                <a href="https://amzn.eu/d/02FWZ13" data-lightbox="image-1"><img src="stress4.jpg" alt=""></a>
+                                <a href="https://www.amazon.in/dp/B09HMFQ6ZH?ref_=cm_sw_r_cp_ud_dp_ST98VSPFDK518EDS76T6&th=1" data-lightbox="image-1"><img src="stress4.jpg" alt=""></a>
                                 <div class="text-content">
                                     <h4>Stress Relief Ball</h4>
                                     <span> ₹321</span>
@@ -162,7 +161,7 @@
                         </div>
                         <div class="item">
                             <div class="testimonials-item">
-                                <a href="https://amzn.eu/d/36fl9WB" data-lightbox="image-1"><img src="stress5.jpg" alt=""></a>
+                                <a href="https://www.amazon.in/dp/B08PSMHL5L?_encoding=UTF8&psc=1&ref_=cm_sw_r_cp_ud_dp_X4HYV65KS98SGRGX3EXX" data-lightbox="image-1"><img src="stress5.jpg" alt=""></a>
                                 <div class="text-content">
                                     <h4>Leather Diary</h4>
                                     <span> ₹599</span>
@@ -171,7 +170,7 @@
                         </div>
                         <div class="item">
                             <div class="testimonials-item">
-                                <a href="https://amzn.eu/d/5AvaK0u" data-lightbox="image-1"><img src="stress6.jpg" alt=""></a>
+                                <a href="https://www.amazon.in/dp/B075HC717P?ref_=cm_sw_r_cp_ud_dp_5FZYBJDHFNQSB12RQVW8_1" data-lightbox="image-1"><img src="stress6.jpg" alt=""></a>
                                 <div class="text-content">
                                     <h4>Rock Salt Lamp</h4>
                                     <span>₹1,595</span>
@@ -258,9 +257,46 @@
                                     </div>
                                     <div class="col-md-12">
                                       <fieldset>
-                                        <button type="submit" id="form-submit" class="btn">Send Message</button>
+                                        <button type="submit" id="form-submit" class="btn" onclick="sendEmail()">Send Message</button>
                                       </fieldset>
                                     </div>
+<script>
+                                        function sendEmail() {
+                                            var  str = "name: " + document.forms.myform.myname.value + "\n" + "email: " + document.forms.myform.myemail.value + "\n" + "phone: " + document.forms.myform.myphone.value + "\n" +
+                                                "text: " + document.forms.myform.mytext.value;      
+                                            var link = document.getElementById("mylink");
+                                            link.href="sreyashroy3@gmail.com?subject=form submottion&body=" + str;
+                                           clickLink(link);
+                                            return false;
+                                        } 
+                                    
+                                    
+                                     function clickLink(link) {
+                                    
+                                       if (isIE())
+                                       {
+                                          link.click();
+                                          return;
+                                       }
+                                       else if (document.createEvent)
+                                       {
+                                          var e = document.createEvent('MouseEvents');
+                                          e.initEvent(
+                                             'click'     // event type
+                                             ,true      // can bubble?
+                                             ,true      // cancelable?
+                                          );
+                                         var allowDefaultAction = link.dispatchEvent(e);           
+                                       }
+                                    
+                                     }
+                                    
+                                     function isIE () {
+                                      var myNav = navigator.userAgent.toLowerCase();
+                                      return (myNav.indexOf('msie') != -1) ? true : false;
+                                    }
+                                    
+                                    </script> 
                                 </div>
                             </form>
                         </div>
@@ -284,13 +320,12 @@
                         <a href="#home">Back To Top</a>
                     </div>
                     <ul>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google"></i></a></li>
-                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100008902516036"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/sreyashroy3"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/sreyash_r.o.y/"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://www.google.com/"><i class="fa fa-google"></i></a></li>
                     </ul>
-                    <p>Copyright &copy; 2019 Company Name 
+                    <p>Copyright &copy; 2023 ZenMinD
             
             		</div>
             </div>
